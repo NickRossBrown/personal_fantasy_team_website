@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
+  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :post_belongs_to_user, except: [:index, :show, :new, :create]
 
   # GET /posts
   # GET /posts.json
@@ -72,4 +73,12 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:title, :description)
     end
+
+    def post_belongs_to_user
+      if @post.user == current_user
+        return
+      else
+        redirect_to '/posts'
+      end
+  end
 end
