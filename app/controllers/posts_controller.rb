@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_post, only: [:show, :edit, :update, :destroy, :upvote, :downvote]
   before_action :post_belongs_to_user, except: [:index, :show, :new, :create, :upvote, :downvote]
 
   # GET /posts
@@ -64,13 +64,11 @@ class PostsController < ApplicationController
   end
 
   def upvote
-    @post = Post.find(params[:id])
     @post.upvote_by current_user
     redirect_back fallback_location: root_path
   end
 
   def downvote
-    @post = Post.find(params[:id])
     @post.downvote_by current_user
     redirect_back fallback_location: root_path
   end

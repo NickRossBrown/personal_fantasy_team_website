@@ -1,35 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Posts</h1>
+<hr>
 
-<table class="container">
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="container">
+  <div>
     <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.description %></td>
+      <h2> Title - > <%= post.title %></h2>
+      <h3> Description - > <%= post.description %></h3>
+      <h5>
         <div class="btn-group">
-          <td><%= link_to 'Comments', post, class: "btn btn-info" %></td>
+          <%= link_to 'Comments', post, class: "btn btn-info" %>
         </div>
         <% if post.user == current_user %>
           <div class="btn-group">
-            <td><%= link_to 'Edit', edit_post_path(post), class: "btn btn-warning" %>
+            <%= link_to 'Edit', edit_post_path(post), class: "btn btn-warning" %>
           </div>
           <div class="btn-group">
-            <%= link_to 'Delete Post', post, method: :delete, data: { confirm: 'Are you sure?' },class: "btn btn-danger" %></td>
+            <%= link_to 'Delete Post', post, method: :delete, data: { confirm: 'Are you sure?' },class: "btn btn-danger" %>
           </div>
         <% end %>
-      </tr>
+      <h5>
+      <hr>
     <% end %>
-  </tbody>
-</table>
+  </div>
+</div>
 
 
