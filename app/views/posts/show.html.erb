@@ -2,12 +2,20 @@
 
 <p>
   <strong>Title:</strong>
+  <br>
   <%= @post.title %>
 </p>
 
 <p>
   <strong>Description:</strong>
+  <br>
   <%= @post.description %>
+</p>
+
+<p>
+  <strong>Posted By:</strong>
+  <br>
+  <%= @post.user.email %>
 </p>
 
 <% if @post.user == current_user %>
