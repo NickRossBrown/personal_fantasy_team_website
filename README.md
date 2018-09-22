@@ -15,27 +15,25 @@ I always start any personal project the same way, with a book. I tend to find my
 
 #### Adaptability
 
-* Look for help when planning, people with strong Focus/Stratetic/belief talents to help with the long-term goals. 
 * Fine-tune my responsiveness, when uncreditable work pressure hits practice the first 3 moves I will make. 
+        - One of the most useful responses that I have found helpful over the years is to not say "you" whenever anyone does something that bothers me. Saying 'you' tends to be fighting words by someone on the defense. There is a big difference between saying "You need clean those dirty dishes. They have been left out for days now", than "I get really frustrated and upset when I see dirty dishes that look to be rotting" I found that if I start by declaring "you" my roommate responds himself by also saying "yeah... but you did this" and we got nowhere until I thought about how I respond to uncreditable roommate conflict.
 
 #### Intellection
-* Schedule time for thinking, it can be energising for me. 
-* Write down ideas in a log. They might provide valuable insights.
-* People may think I am aloof or disengaged spending time alone/closing a door. Let them know this is a reflection of my thinking and not a result from a disregard for relationships.
 
+* Write down ideas in a log. They might provide valuable insights.
+        - I love painting, and recently I have been into abstract art. I get that 'I can do that, but better' feeling looking at different abstract paintings. (picture of paintings here) 
 
 #### Restorative
 * Constant improvement is one of your hallmarks seek opportunity to enhance my ablilities through a demanding field, activity, or endevavor that requires exceptional skill and/or knowledge. 
-* seek roles in which I am paid to solve problems or in my ability to restore and resolve. 
+        - The brain is a muscle, and I think that it is important to contiuously keep working it out. Whenever I have the free time to study I pick up chess and try to improve my chess skilss. (link uscf website)
 
 #### Empathy
-* Although my intuitions may feel like hunches, take note of them. 
 * Create a ritual at the end of the day to signal that work is over. This will help me emotions and prevent burnout. 
 
 
 #### Relator
-* Fnd a workplace in which friendships are encourages. I will not do well in overly formal organizations. In job interviews, ask about work styles and work culture. 
 * Let it be known I am more interested in the character and personality of others than their status or job title. 
+         - I simple will not golf with some people I've met, and they are way better golfers than I am. Someone cannot hide an anger problem on a golf course. People are going to ht frustatingly bad shots when they know they are more than capible of hitting adecent one. 
 
 
 
