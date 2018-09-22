@@ -16,57 +16,26 @@ I always start any personal project the same way, with a book. I tend to find my
 #### Adaptability
 
 * Look for help when planning, people with strong Focus/Stratetic/belief talents to help with the long-term goals. 
-   
-        -personal note
-
 * Fine-tune my responsiveness, when uncreditable work pressure hits practice the first 3 moves I will make. 
-
-         -personal note
 
 #### Intellection
 * Schedule time for thinking, it can be energising for me. 
-
-        -personal note
-
 * Write down ideas in a log. They might provide valuable insights.
-
-        -personal note
-
 * People may think I am aloof or disengaged spending time alone/closing a door. Let them know this is a reflection of my thinking and not a result from a disregard for relationships.
 
-        -personal note
 
 #### Restorative
 * Constant improvement is one of your hallmarks seek opportunity to enhance my ablilities through a demanding field, activity, or endevavor that requires exceptional skill and/or knowledge. 
-
-        -personal note
-
-
 * seek roles in which I am paid to solve problems or in my ability to restore and resolve. 
 
-        -personal note
-
 #### Empathy
-
 * Although my intuitions may feel like hunches, take note of them. 
-
-        -personal note
-
-
 * Create a ritual at the end of the day to signal that work is over. This will help me emotions and prevent burnout. 
-
-        -personal note
 
 
 #### Relator
-
 * Fnd a workplace in which friendships are encourages. I will not do well in overly formal organizations. In job interviews, ask about work styles and work culture. 
-
-        -personal note
-
 * Let it be known I am more interested in the character and personality of others than their status or job title. 
-
-        -personal note
 
 
 
