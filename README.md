@@ -10,6 +10,7 @@ A project for my personal branding. Its goal is to find ways to express part of 
 ## The "big picture"
 
 I always start any personal project the same way, with a book. I tend to find myself running down a rabbit hole where I realize that the contraption I proudly built, which rotates around its center axis and reduces friction, is a wheel. So, with a quick online search I found a book, Strengths Finder 2.0 by Tom Rath, to help me with its overall suggestion of the top five themes/strengths that are associated wit my personality. The book was advertised well, with high star average amazon rating. I didn't read close enough to see that the ebook I was buying was just a collection of 34 strengths/theme's explinations and suggestions, and that I can only take the test, online, ONCE (I wanted to share the test with my classmates). Not sraping the strengthFiner idea for the self assignment project and starting over I'm going to see what the results have to offer me (I'm going frustratingly ignore all the various "spend more money and upgrade for additional results" options listed all over the website). 
+<img  height="500" src="app/assets/images/strengths.png">
 
 
 
@@ -21,11 +22,14 @@ I always start any personal project the same way, with a book. I tend to find my
 #### Intellection
 
 * Write down ideas in a log. They might provide valuable insights.
-        - I love painting, and recently I have been into abstract art. I get that 'I can do that, but better' feeling looking at different abstract paintings. (picture of paintings here) 
+        - I love painting, and recently I have been into abstract art. I get that 'I can do that, but better' feeling looking at different abstract paintings. 
+        <img  height="200" src="public/painting1.jpg">
+        <img  height="200" src="public/painting2.jpg">
+        
 
 #### Restorative
 * Constant improvement is one of your hallmarks seek opportunity to enhance my ablilities through a demanding field, activity, or endevavor that requires exceptional skill and/or knowledge. 
-        - The brain is a muscle, and I think that it is important to contiuously keep working it out. Whenever I have the free time to study I pick up chess and try to improve my chess skilss. (link uscf website)
+        - The brain is a muscle, and I think that it is important to contiuously keep working it out. [Whenever I have the free time to study I pick up chess and try to improve my chess skilss.](http://www.uschess.org/datapage/ratings_graph.php?memid=12902073)
 
 #### Empathy
 * Create a ritual at the end of the day to signal that work is over. This will help me emotions and prevent burnout. 
