@@ -1,3 +1,18 @@
-<p> <%= @season.title %> </p>
-<p> <%= @season.description %> </p>
-<p> <%= @season.year %> </p>
+<p> season title  -> <%= @season.title %> </p>
+<p> season description  -><%= @season.description %> </p>
+<p> season year  -><%= @season.year %> </p>
+
+<h3>All the weeks for -> <%= @season.year  %>:</h3>
+<% if @season.weeks.any? %>
+<% @season.weeks.each do |week| %>
+          <hr>
+          <div class="card">
+              <h3>week number -> <%= week.week_number %> week</h3>
+              <hr>
+              <h5>week description -> <%= week.description %> </h5>
+          </div>
+        <% end %>
+    <% else %>
+    <p>There are no weeks yet!</p>
+<% end %>
+<br>

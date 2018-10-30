@@ -1,7 +1,10 @@
 <h1>reached seasons</h1>
-
+<hr>
+<hr>
+<hr>
 <ul>
   <% @seasons.each do |season| %>
+    <hr>
     <li><%= season.year %></li>
     <p> <%= link_to season.year, season_path(season), class: "btn btn-info" %></p>
   <% end %>
