@@ -1,0 +1,19 @@
+<h1> asdjklas</h1>
+
+<%= form_for [@season, @week] do |f| %>
+
+
+
+
+<div class="formField">
+  <%= f.label :week_number %>
+  <br>
+  <%= f.select :week_number, options_for_select([["Pick A Week", ""], ["$ ", 1], ["$$", 2], ["$$$",3],  ["$$$$",4],  ["$$$$$", 5]]), :class => 'form_dropBox' %> 
+</div>
+
+
+<div class="field">
+    <%= f.submit %>
+</div>
+
+<% end %>

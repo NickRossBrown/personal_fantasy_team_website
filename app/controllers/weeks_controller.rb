@@ -1,8 +1,10 @@
 class WeeksController < ApplicationController
 
   def new
+    
     @season = Season.find(params[:season_id])
     @week = @season.weeks.new  
+    @week.save
   end
 
   def index
@@ -20,7 +22,7 @@ class WeeksController < ApplicationController
     @Season = Season.find(params[:season_id])
     @week = @season.weeks.new(week_params)
     if @week.save
-      redirect_to season_path(@week.season)
+      redirect_to season_path(@season)
       flash[:notice] = "week successfully added!"
     else
       render :new
@@ -32,7 +34,7 @@ class WeeksController < ApplicationController
     @week = @Season.weeks.find(params[:id])
     @week.destroy
     flash[:notice] = "week successfully destroyed!"
-    redirect_to food_path(@week.food)
+    redirect_to season_path(@week.season)
   end
 
   def edit
@@ -46,7 +48,7 @@ class WeeksController < ApplicationController
     # binding.pry
     if @week.update(week_params)
       flash[:notice] = "week successfully updated!"
-      redirect_to food_path(@week.food)
+      redirect_to season_path(@week.season)
     else
       render :edit
     end
@@ -54,7 +56,7 @@ class WeeksController < ApplicationController
 
 private
   def week_params
-    params.require(:week).permit(:id, :season_id, :description)
+    params.require(:week).permit(:id, :season_id, :description, :week_number)
   end
 
 end

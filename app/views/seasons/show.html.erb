@@ -12,9 +12,17 @@
               <h5>week description -> <%= week.description %> </h5>
               <hr>
               <h1> <%= link_to 'Week Details', season_week_path(@season, week), class: "btn btn-info" %></h1>
+              <%= link_to 'Edit', edit_season_week_path(@season, week), class: "btn btn-warning" %>
+                <%= link_to 'Delete week',season_week_path(@season, week), method: :delete, data: { confirm: 'Are you sure?' },class: "btn btn-danger" %>
           </div>
         <% end %>
     <% else %>
     <p>There are no weeks yet!</p>
 <% end %>
 <br>
+<p><%= link_to "Add a week", new_season_week_path(@season) %></p>
+<p><%= link_to "Delete week", new_season_week_path(@season),
+                        :data => {:confirm => "Are you sure?",
+                                       :method => "delete"} %></p>
+
+<p><%= link_to "Return to seasons", seasons_path %></p>
