@@ -9,6 +9,14 @@ Rails.application.routes.draw do
   end
 
   resources :seasons do
+    resources :weeks do
+      resources :posts do
+        member do
+        put "like", to: "posts#upvote"
+        put "dislike", to: "posts#downvote"
+        end
+      end
+    end
     member do
       get 'hide_details'
       get 'show_details'

@@ -2,7 +2,7 @@ class SeasonsController < ApplicationController
   
   before_action :user_is_admin, only: [:new, :create, :edit, :update, :destroy]
   def index
-    @seaons = Season.all
+    @seasons = Season.all
   end
 
   def new
@@ -17,7 +17,7 @@ class SeasonsController < ApplicationController
     @season = Season.new(season_params)
     if @season.save
       redirect_to '/'
-      flash[:success] = "New Product Added!"
+      flash[:success] = "New Season Added!"
     else
       render :new
     end
@@ -69,7 +69,7 @@ class SeasonsController < ApplicationController
 
 private
   def season_params
-    params.require(:season).permit(:year, :week)
+    params.require(:season).permit(:id, :year, :week)
   end
 
   def user_is_admin
