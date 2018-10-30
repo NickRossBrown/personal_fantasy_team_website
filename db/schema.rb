@@ -15,42 +15,6 @@ ActiveRecord::Schema.define(version: 2018_10_30_033012) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "league_users", force: :cascade do |t|
-    t.string "league_manager"
-    t.integer "league_id"
-    t.integer "user_id"
-  end
-
-  create_table "leagues", force: :cascade do |t|
-    t.string "name"
-    t.string "motto"
-    t.string "description"
-    t.string "league_manager_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "lineups", force: :cascade do |t|
-    t.string "groupA_pick1"
-    t.string "groupA_pick2"
-    t.string "groupA_bench1"
-    t.string "groupA_bench2"
-    t.string "groupB_pick1"
-    t.string "groupB_pick2"
-    t.string "groupB_pick3"
-    t.string "groupB_pick4"
-    t.string "groupB_bench1"
-    t.string "groupB_bench2"
-    t.string "groupB_bench3"
-    t.string "groupB_bench4"
-    t.string "groupC_pick1"
-    t.string "groupC_pick2"
-    t.string "groupC_bench1"
-    t.string "groupC_bench2"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "posts", force: :cascade do |t|
     t.string "title"
     t.string "description"
