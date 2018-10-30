@@ -1,1 +1,48 @@
 <h1>reached</h1>
+<h1>season.year <%= @season.year %> </h1>
+<h1>reached</h1>
+<h1>week </h1>
+<h1>week.week_number -> <%= @week.week_number %> </h1>
+<h1>week.title-> <%= @week.title%> </h1>
+<h1>week.description -> <%= @week.description %> </h1>
+<% if @week.posts.any? %>
+  <% @week.posts.each do |post| %>
+      <h2> Title - > <%= post.title %></h2>
+      <div>
+        <%= link_to like_post_path(post), method: :put, class: "btn btn-primary btn-sm" do %>
+          <span class="glyphicon glyphicon-chevron-up"></span>
+          Upvote
+          <%= post.get_upvotes.size %>
+        <% end %>
+
+        <%= link_to dislike_post_path(post), method: :put, class: "btn btn-warning btn-sm" do %>
+          <span class="glyphicon glyphicon-chevron-down"></span>
+          Downvote
+          <%= post.get_downvotes.size %>
+        <% end %>
+      </div>    
+      <h3> Description - > <%= post.description %></h3>
+    
+        <div class="btn-group">
+          <%= link_to 'Comments', post, class: "btn btn-info" %>
+        </div>
+        <% if post.user == current_user %>
+          <div class="btn-group">
+            <%= link_to 'Edit', edit_post_path(post), class: "btn btn-warning" %>
+            <%= link_to 'Delete Post', post, method: :delete, data: { confirm: 'Are you sure?' },class: "btn btn-danger" %>
+          </div>
+        <% end %>
+    
+      <hr>
+    
+  <% end %>
+<% else %>
+  <p>There are no posts yet!</p>
+<% end %>
+<br>
+<p><%= link_to "Add a post", new_season_week_post_path(@season, @week) %></p>
+<p><%= link_to "Delete post", new_season_week_post_path(@season, @week),
+                        :data => {:confirm => "Are you sure?",
+                                       :method => "delete"} %></p>
+
+<p><%= link_to "Return to lists", seasons_path %></p>

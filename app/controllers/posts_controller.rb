@@ -16,7 +16,11 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    @post = current_user.posts.build
+    
+    @week = Week.find(params[:week_id])
+    @post = current_user.posts.new
+    @post.week_id = @week.id
+    @post.save!
   end
 
   # GET /posts/1/edit
@@ -81,8 +85,10 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:title, :description)
+      params.require(:post).permit(:title, :description, :week_id)
     end
+
+  
 
     def post_belongs_to_user
       if @post.user == current_user
