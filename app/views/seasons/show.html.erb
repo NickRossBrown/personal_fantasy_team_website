@@ -10,6 +10,8 @@
               <h3>week number -> <%= week.week_number %> week</h3>
               <hr>
               <h5>week description -> <%= week.description %> </h5>
+              <hr>
+              <h1> <%= link_to 'Week Details', season_week_path(@season, week), class: "btn btn-info" %></h1>
           </div>
         <% end %>
     <% else %>
