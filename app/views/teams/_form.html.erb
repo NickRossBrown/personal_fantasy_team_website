@@ -1,0 +1,39 @@
+<h1> Add New Team</h1>
+
+<%= form_for @team do |form| %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <br>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <br>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <br>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="formField">
+    <%= form.label :number_of_wins %>
+    <br>
+    <%= form.number_field :number_of_wins %>
+  </div>
+
+  <div class="formField">
+    <%= form.label :number_of_playoffs %>
+    <br>
+    <%= form.number_field :number_of_playoffs %>
+  </div>
+
+<div class="field">
+    <%= form.submit %>
+</div>
+
+<% end %>
