@@ -1,0 +1,11 @@
+<h1>reached teams</h1>
+<hr>
+<hr>
+<hr>
+  <% @teams.each do |team| %>
+    <hr>
+    <p> <%= link_to team.year, team_path(team), class: "btn btn-info" %></p>
+  <% end %>
+<p><%= link_to "Add a team", new_team_path %></p>
+
+<p><%= link_to "Return to teams", teams_path %></p>

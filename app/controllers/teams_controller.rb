@@ -1,41 +1,41 @@
-class SeasonsController < ApplicationController
+class TeamsController < ApplicationController
   
   # before_action :user_is_admin, only: [:new, :create, :edit, :update, :destroy]
   def index
-    @seasons = Season.all
+    @teams = Team.all
   end
 
   def new
-    @season = Season.new
+    @team = Team.new
   end
 
   def show
-    @season = Season.find(params[:id])
+    @team = Team.find(params[:id])
   end
 
   def create
-    @season = Season.new(season_params)
-    if @season.save
+    @team = Team.new(team_params)
+    if @team.save
       redirect_to '/'
-      flash[:success] = "New Season Added!"
+      flash[:success] = "New team Added!"
     else
       render :new
     end
   end
 
   def edit
-    @season = Product.find(params[:id])
+    @team = Team.find(params[:id])
     respond_to do |format|
-      format.html { redirect_to products_path }
+      format.html { redirect_to teams_path }
       format.js
     end
   end
 
   def update
-    @season = Product.find(params[:id])
-    if @season.update(season_params)
+    @team = Team.find(params[:id])
+    if @team.update(team_params)
       respond_to do |format|
-        format.html { redirect_to season_path }
+        format.html { redirect_to team_path }
         format.js
       end
     else
@@ -44,8 +44,8 @@ class SeasonsController < ApplicationController
   end
 
   def destroy
-    @season = Product.find(params[:id])
-    @season.destroy
+    @team = Team.find(params[:id])
+    @team.destroy
     respond_to do |format|
       format.html { redirect_to season_path }
       format.js
@@ -54,22 +54,22 @@ class SeasonsController < ApplicationController
   end
 
   def show_details
-    @season = Product.find(params[:id])
+    @team = Team.find(params[:id])
     respond_to do |format|
       format.js
     end
   end
 
   def hide_details
-    @season = Product.find(params[:id])
+    @team = Team.find(params[:id])
     respond_to do |format|
       format.js
     end
   end
 
 private
-  def season_params
-    params.require(:season).permit(:id, :year, :week)
+  def team_params
+    params.require(:team).permit(:title, :description, :number_of_wins, :number_of_playoffs)
   end
 
   def user_is_admin

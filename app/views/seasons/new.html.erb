@@ -1,0 +1,27 @@
+<h1> Add New Season</h1>
+
+<%= form_for @season do |form| %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <br>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <br>
+    <%= form.text_field :description %>
+  </div>
+  <div class="formField">
+  <%= form.label :year %>
+  <br>
+  <%= form.number_field :year %>
+</div>
+
+
+<div class="field">
+    <%= form.submit %>
+</div>
+
+<% end %>

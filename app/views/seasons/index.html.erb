@@ -2,10 +2,10 @@
 <hr>
 <hr>
 <hr>
-<ul>
   <% @seasons.each do |season| %>
     <hr>
-    <li><%= season.year %></li>
     <p> <%= link_to season.year, season_path(season), class: "btn btn-info" %></p>
   <% end %>
-</ul>
+<p><%= link_to "Add a season", new_season_path %></p>
+
+<p><%= link_to "Return to lists", seasons_path %></p>
