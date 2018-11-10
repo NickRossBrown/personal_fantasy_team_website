@@ -1,10 +1,15 @@
         <ul>
-          <li><a href="#">ABOUT</a>
+          <li><a href="/abouts">ABOUT</a>
             <ul class="dropdown">
-              <li><a href="#">The League</a></li>
-              <li><a href="#">The Constitution</a></li>
-              <li><a href="#">The Trophy</a></li>
-              <li><a href="#">Website Developer</a></li>
+              <li><%= link_to 'The League', about_path(1) %></li>
+              <li><a href="abouts/2">The Constitution</a></li>
+              <li><a href="abouts/3">The Trophy</a></li>
+              <li><a href="abouts/4">Website Developer</a></li>
+
+              <li><a href="abouts/1">The League</a></li>
+              <li><a href="abouts/2">The Constitution</a></li>
+              <li><a href="abouts/3">The Trophy</a></li>
+              <li><a href="abouts/4">Website Developer</a></li>
             </ul>
           </li>
           <li><a href="/teams">TEAMS</a>
