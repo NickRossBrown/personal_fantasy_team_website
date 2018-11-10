@@ -25,7 +25,13 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :teams
+  resources :teams do
+    member do
+      get 'the_league'
+      get 'show_details'
+      get 'record_book'
+    end
+  end
 
   
   
