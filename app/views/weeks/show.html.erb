@@ -1,10 +1,10 @@
-<h1>reached</h1>
-<h1>season.year <%= @season.year %> </h1>
-<h1>reached</h1>
-<h1>week </h1>
+<h1>season.year -> <%= @season.year %> </h1>
 <h1>week.week_number -> <%= @week.week_number %> </h1>
 <h1>week.title-> <%= @week.title%> </h1>
 <h1>week.description -> <%= @week.description %> </h1>
+<hr>
+<hr>
+<hr>
 <% if @week.posts.any? %>
   <% @week.posts.each do |post| %>
       <h2> Title - > <%= post.title %></h2>
@@ -45,4 +45,5 @@
                         :data => {:confirm => "Are you sure?",
                                        :method => "delete"} %></p>
 
-<p><%= link_to "Return to lists", seasons_path %></p>
+<a href="javascript:history.go(-1)">Return</a>
+<%# <p><%= link_to "Return to lists", seasons_path %>

@@ -21,8 +21,5 @@
 <% end %>
 <br>
 <p><%= link_to "Add a week", new_season_week_path(@season) %></p>
-<p><%= link_to "Delete week", new_season_week_path(@season),
-                        :data => {:confirm => "Are you sure?",
-                                       :method => "delete"} %></p>
 
 <p><%= link_to "Return to seasons", seasons_path %></p>
