@@ -1,10 +1,10 @@
 class AboutsController < ApplicationController
   before_action :set_about, only: [:show, :edit, :update, :destroy]
+  before_action :set_dropdown_variables 
 
   # GET /abouts
   # GET /abouts.json
   def index
-    @abouts = About.all
   end
 
   # GET /abouts/1

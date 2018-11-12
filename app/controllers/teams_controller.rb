@@ -1,8 +1,8 @@
 class TeamsController < ApplicationController
   
   # before_action :user_is_admin, only: [:new, :create, :edit, :update, :destroy]
+  before_action :set_dropdown_variables 
   def index
-    @teams = Team.all
   end
 
   def new
@@ -16,7 +16,7 @@ class TeamsController < ApplicationController
   def create
     @team = Team.new(team_params)
     if @team.save
-      redirect_to '/'
+      redirect_to teams_path
       flash[:success] = "New team Added!"
     else
       render :new

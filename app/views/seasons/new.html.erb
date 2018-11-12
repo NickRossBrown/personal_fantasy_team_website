@@ -5,18 +5,18 @@
   <div class="field">
     <%= form.label :title %>
     <br>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, :placeholder => "enter value" %>
   </div>
 
   <div class="field">
     <%= form.label :description %>
     <br>
-    <%= form.text_field :description %>
+    <%= form.text_field :description, :placeholder => "enter value" %>
   </div>
   <div class="formField">
   <%= form.label :year %>
   <br>
-  <%= form.number_field :year %>
+  <%= form.number_field :year, :value => 2020 %>
 </div>
 
 

@@ -1,8 +1,8 @@
 class SeasonsController < ApplicationController
   
   # before_action :user_is_admin, only: [:new, :create, :edit, :update, :destroy]
+  before_action :set_dropdown_variables 
   def index
-    @seasons = Season.all
   end
 
   def new

@@ -1,4 +1,5 @@
 class WeeksController < ApplicationController
+  before_action :set_dropdown_variables 
 
   def new
     
