@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :champions
   resources :records
   resources :abouts
   devise_for :users
@@ -37,6 +38,6 @@ Rails.application.routes.draw do
   
   
 
-  root :to => 'posts#index'
+  root :to => 'abouts#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

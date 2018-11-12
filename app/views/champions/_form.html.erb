@@ -1,0 +1,27 @@
+<%= form_with(model: champion, local: true) do |form| %>
+  <% if champion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(champion.errors.count, "error") %> prohibited this champion from being saved:</h2>
+
+      <ul>
+      <% champion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :champion %>
+    <%= form.text_field :champion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,16 +1,16 @@
         <ul>
-          <li><a href="/abouts">ABOUT</a>
+          <li><%= link_to 'ABOUT', abouts_path %>
             <ul class="dropdown">
               <% @abouts.each do |about| %>
                 <li> <%= link_to about.title, about_path(about) %></li>
               <% end %>
-              <li><%= link_to 'The League', about_path(1) %></li>
-              <li><%= link_to 'The Constitution', about_path(2) %></li>
-              <li><%= link_to 'The Trophy', about_path(3) %></li>
-              <li><%= link_to 'Website Developer', about_path(4) %></li>
+              <%# <li><%= link_to 'The League', about_path(1) %>
+              <%# <li><%= link_to 'The Constitution', about_path(2) %>
+              <%# <li><%= link_to 'The Trophy', about_path(3) %>
+              <%# <li><%= link_to 'Website Developer', about_path(4) %>
             </ul>
           </li>
-          <li><a href="/teams">TEAMS</a>
+          <li><%= link_to 'TEAMS', teams_path %>
             <ul class="dropdown">
             <% @teams.each do |team| %>
               <li> <%= link_to team.name, team_path(team) %></li>
@@ -26,8 +26,10 @@
             <% end %>
             </ul>
           </li>
+
           <li> <%= link_to 'RECORD BOOK', records_path %></li>
-          <li><a href="#">RECORD BOOK</a></li>
-          <li><a href="#">CHAMPIONS</a></li>
+
+          <li> <%= link_to 'CHAMPIONS', champions_path %></li>
+
         </ul>
       </nav>
