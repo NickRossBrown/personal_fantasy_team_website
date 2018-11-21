@@ -33,3 +33,6 @@ localhost:<port number>      ---example--- localhost:3000
 *{This software is licensed under the MIT license}*
 
 Copyright (c) 2018 **_  Nick Brown  _**
+
+future color sceme 
+Hex: 202B47 / 5D3B63 / 9DBE55 / EFD9AC
